@@ -1,0 +1,169 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+/* --------------------------------------------------- */
+/* Basic Setup */
+/* --------------------------------------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  color: #555;
+  font-family: "Raleway", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
+}
+
+/* --------------------------------------------------- */
+/* Resuable content */
+/* --------------------------------------------------- */
+
+h1 {
+  font-family: Impact, Arial, sans-serif;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: black;
+  font-size: 300%;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-family: Tahoma, Arial, sans-serif;
+}
+
+.background-blue,
+.meme-gallery {
+  background-color: #d4f0fd;
+  padding: 1%;
+}
+
+/* --------------------------------------------------- */
+/* Header */
+/* --------------------------------------------------- */
+
+.title {
+  width: 900px;
+}
+
+/* --------------------------------------------------- */
+/* Meme Gallery */
+/* --------------------------------------------------- */
+.gallery {
+  list-style: none;
+  width: 100%;
+}
+
+.meme {
+  position: relative;
+  width: 59%;
+  margin: auto;
+}
+
+.meme > img {
+  width: 500px;
+}
+
+.meme > h2 {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 #000;
+}
+
+.meme > .bottom {
+  bottom: 0;
+}
+
+.meme > .top {
+  top: 0;
+}
+
+/* --------------------------------------------------- */
+/* Footer */
+/* --------------------------------------------------- */
+
+footer {
+  background-color: #b9ebee;
+  padding: 20px;
+  font-size: 80%;
+  text-align: center;
+  border-top: 1px solid #c7eff1;
+}
+
+.footer p {
+  font-family: Impact, Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+/* --------------------------------------------------- */
+/* Media Queries */
+/* --------------------------------------------------- */
+
+/*large ipad to desktop/laptop */
+@media only screen and (max-width: 1200px) {
+}
+
+/*small tablet Large Ipad */
+
+@media only screen and (max-width: 1023px) {
+}
+
+/*Large Phones  to small tablets*/
+@media only screen and (max-width: 767px) {
+  .title {
+    width: 85%;
+  }
+  h1 {
+    font-size: 280%;
+  }
+  h2 {
+    font-size: 190%;
+  }
+  .meme > h2 {
+    font-size: 1.5em;
+  }
+  .meme > img {
+    width: 100%;
+  }
+}
+
+/*Small Phones */
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 250%;
+  }
+  h2 {
+    font-size: 110%;
+  }
+  html {
+    font-size: 90%;
+  }
+  .meme > h2 {
+    font-size: 1em;
+  }
+  img,
+  .meme-img,
+  .red-cross,
+  .text {
+    width: 350px;
+  }
+
+  .text {
+    font-size: 160%;
+  }
+}
